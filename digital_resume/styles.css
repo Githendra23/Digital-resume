@@ -9,9 +9,10 @@
         font-family: PromixaNova;
         color: #fffffe;
         font-size: 150%;
-        display: flex; 
-        justify-content: space-evenly;
-        align-items: center;
+        display: flex;
+        flex-direction: column; /* To center vertically */
+        justify-content: center;
+        align-items: center; /* To center horizontally */
         text-align: center;
         min-height: 100vh;
     }
@@ -21,13 +22,17 @@
     }
     
     .slideshow-container {
-        max-width: 1000px;
+        width: auto;
         position: relative;
     }
     
     .header_title {
         margin-left: 10px;
         margin: auto;
+    }
+
+    .logo {
+        width: 30px;
     }
     
     .pfp {
