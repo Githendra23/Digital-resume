@@ -1,24 +1,22 @@
-const lastSlidePage = 5;
+const lastSlidePage = 6;
 const firstSlidePage = 1;
 
 let slidePage = firstSlidePage;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
   for (let i = 2; i <= lastSlidePage; i++) 
 {
   document.getElementById("slide_" + i).style.display = "none";
 }
 });
 
-console.log(2);
-
-document.addEventListener('keydown', function(event) {
-  console.log(3);
-  switch (event.key) {
+document.addEventListener('keydown', function(event) 
+{
+  switch (event.key) 
+  {
     case 'ArrowUp':
-      console.log(4);
-
-      if (slidePage > firstSlidePage) 
+      if (slidePage > firstSlidePage)
       {
         updateSlide(slidePage, "none"); // Hide the current slide
         slidePage--;

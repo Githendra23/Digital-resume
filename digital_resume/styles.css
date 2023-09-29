@@ -1,10 +1,13 @@
-@font-face {
+@font-face 
+{
     font-family: PromixaNova;
     src: url(proxima_ssv/ProximaNova-Regular.otf);
 }
 
-@media screen and (min-width: 580px) {
-    html {
+@media screen and (min-width: 580px) 
+{
+    html 
+    {
         background-color: #16161a;
         font-family: PromixaNova;
         color: #fffffe;
@@ -17,21 +20,30 @@
         min-height: 100vh;
     }
     
-    .slideshow-container {
+    .slideshow-container 
+    {
         width: auto;
         position: relative;
     }
     
-    .header_title {
+    .header_title 
+    {
+        width: 70%;
         margin-left: 10px;
         margin: auto;
     }
 
-    .logo {
+    .logo 
+    {
         width: 30px;
     }
     
-    .pfp {
+    #slide_1 h1 {
+        display: inline-block;
+    }
+
+    .pfp 
+    {
         margin-right: 50px;
         display: flex;
         justify-content: center;
@@ -42,21 +54,29 @@
         border: 2px solid #010101;
     }
     
-    header h1 {
+    h1 
+    {
         color: #2cb67d;
     }
     
-    header h2 {
+    header h2 
+    {
         margin-top: -20px;
     }
     
-    header {
+    header 
+    {
         display: flex; 
     }
     
-    img {
+    img 
+    {
         width: 200px;
         margin: 20px;
+    }
+
+    #slide_5 > img {
+        width: 550px;
     }
 }
 
