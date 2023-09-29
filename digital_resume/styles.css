@@ -17,10 +17,6 @@
         min-height: 100vh;
     }
     
-    .demo {
-        display: none;
-    }
-    
     .slideshow-container {
         width: auto;
         position: relative;
