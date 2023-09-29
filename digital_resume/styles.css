@@ -1,102 +1,45 @@
-
-@media screen and (max-width: 1019px) {
-    html {
-        display: none;
-    }
+@font-face {
+    font-family: PromixaNova;
+    src: url(proxima_ssv/ProximaNova-Regular.otf);
 }
 
-@media screen and (min-width: 1020px) {
-    html {
-        background-color: rgb(30, 31, 40);
-        font-family: Arial;
-        color: white;
-        display: flex;
-        align-items: center;
-        width: 70%;
-        max-width: 900px;
-        margin: auto;
-    }
+html {
+    background-color: #16161a;
+    font-family: PromixaNova;
+    color: #fffffe;
+    display: flex;
+    font-size: 150%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    max-width: 100%;
+}
 
-    ul {
-        list-style-type: none;
-    }
+.header {
+    display: flex; /* Add flex display to .header to make its children inline */
+    align-items: center; /* Vertically center align the children */
+}
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
+.header_title {
+    margin-left: 10px; /* Add margin to separate image and title */
+}
 
-    header {
-        display: flex;
-        align-items: center;
-        border-radius: 15px;
-        background-color: rgb(36, 36, 47);
-        height: 150px;
-        margin: 10px;
-    }
+.pfp {
+    background-color: #72757e;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #010101; /* Simplify border style */
+}
 
-    .programming_logo > img {
-        height: 35px;
-    }
+header h1 {
+    color: #2cb67d;
+}
 
-    header > img {
-        border-radius: 50%;
-        height: 130px;
-        width: auto;
-        margin: 10px;
-    }
+header h2 {
+    margin-top: -20px;
+}
 
-    header > ul > li:first-child > a:hover {
-        text-decoration: underline;
-    }
-
-    header > ul > li {
-        margin: 5px;
-    }
-
-    header > li {
-        display: flex;
-        align-items: center;
-    }
-
-    header > img {
-        margin-right: 20px;
-    }
-
-    .info-card {
-        align-items: center;
-        margin-left: auto;
-        margin-right: 10px;
-    }
-    
-    .header {
-        text-align: left;
-    }
-    
-    .header > h3 {
-        margin-top: -15px;
-    }
-
-    main {
-        margin: 10px;
-    }
-
-    aside {
-        background-color: rgb(31, 31, 43);
-        height: 200px;
-        margin: 10px;
-    }
-
-    aside > div {
-        margin: 10px;
-    }
-
-    aside > table {
-        margin-bottom: 10px;
-    }
-
-    aside > a {
-        background-color: rgb(36, 36, 47);
-        margin-top: 10px;
-    }
+img {
+    width: 200px;
 }
