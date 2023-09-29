@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 1019px) {
     html {
         display: none;
@@ -26,6 +25,10 @@
         color: white;
     }
 
+    a:hover {
+        text-decoration: underline;
+    }
+
     header {
         display: flex;
         align-items: center;
@@ -46,12 +49,12 @@
         margin: 10px;
     }
 
-    header > ul > li:first-child > a:hover {
-        text-decoration: underline;
-    }
-
     header > ul > li {
         margin: 5px;
+    }
+
+    th {
+        font-size: large;
     }
 
     header > li {
@@ -79,6 +82,14 @@
 
     main {
         margin: 10px;
+    }
+
+    main > table > th > a {
+        color: green;
+    }
+
+    .course_date {
+        text-align: center;
     }
 
     aside {
