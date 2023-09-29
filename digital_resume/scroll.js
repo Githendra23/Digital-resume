@@ -1,4 +1,4 @@
-const lastSlidePage = 6;
+const lastSlidePage = 7;
 const firstSlidePage = 1;
 
 let slidePage = firstSlidePage;
@@ -15,7 +15,7 @@ document.addEventListener('keydown', function(event)
 {
   switch (event.key) 
   {
-    case 'ArrowUp':
+    case 'ArrowLeft':
       if (slidePage > firstSlidePage)
       {
         updateSlide(slidePage, "none"); // Hide the current slide
@@ -24,7 +24,7 @@ document.addEventListener('keydown', function(event)
       }
       break;
 
-    case 'ArrowDown':
+    case 'ArrowRight':
 
       if (slidePage < lastSlidePage) 
       {
