@@ -99,13 +99,20 @@
         padding: 20px;
     }
 
+    #slide_3 > img { margin: 20px; }
+
     #slide_4 > img, #slide_3 > img, #slide_5 > .school_card > img {
         max-width: 60px;
+        margin: 20px;
     }
 
     #slide_5 {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    #slide_5 > .school_card > img {
+        margin-top: -15px;
     }
 
     #slide_6 {
@@ -128,10 +135,6 @@
         text-align: center;
         margin: 20px;
         flex: 1;
-    }
-
-    .school_card > img {
-        margin-top: -15px;
     }
 
     #buttonPrevious, #buttonNext {
@@ -222,13 +225,11 @@
         margin: 10px;
         border-radius: 10px;
     }
+
+    header h2 { margin-top: -20px; }
     
-    .slideshow-container 
-    {
-        width: auto;
-        position: relative;
-    }
-    
+    header { display: flex; }
+
     .header_title 
     {
         width: 70%;
@@ -236,12 +237,14 @@
         margin-right: 20px;
     }
 
-    .logo 
-    { width: 30px; }
+    .logo { width: 30px; }
 
     #slide_2 { padding: 20px; }
 
-    #slide_3 > img { width: 10% }
+    #slide_3 > img { 
+        width: 10%; 
+        margin: 20px;
+    }
 
     #slide_4 > img { width: 200px; }
 
@@ -261,13 +264,7 @@
     h1 
     { color: #2cb67d; }
     
-    header h2 
-    { margin-top: -20px; }
-    
-    header 
-    { display: flex; }
-    
-    img 
+    #slide_1 > header > div > img 
     {
         width: 200px;
         margin: 20px;
@@ -283,20 +280,28 @@
         align-items: center;
     }
 
+    #slide_4 { padding: 20px; }
+
     #slide_5 {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .contact_card {
-        text-align: left;
-        margin: 50px;
+    #slide_5 > .school_card > img {
+        width: 200px;
+        margin: 20px;
+        margin-top: -15px;
     }
 
     .school_card {
         text-align: center;
         margin: 20px;
         flex: 1;
+    }
+
+    .contact_card {
+        text-align: left;
+        margin: 50px;
     }
 
     #buttonPrevious, #buttonNext {
@@ -319,8 +324,6 @@
     #buttonPrevious:hover, #buttonNext:hover {
         color: white;
     }
-
-    .school_card > img { margin-top: -15px; }
 
     form { max-width:420px; margin:50px auto; }
 
