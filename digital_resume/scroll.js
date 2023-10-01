@@ -6,9 +6,11 @@ let slidePage = firstSlidePage;
 document.addEventListener('DOMContentLoaded', function() 
 {
   for (let i = 2; i <= lastSlidePage; i++) 
-{
-  document.getElementById("slide_" + i).style.display = "none";
-}
+  {
+    hideSlide(i);
+  }
+
+  updateButtons();
 });
 
 document.addEventListener('keydown', function(event) 
@@ -16,37 +18,72 @@ document.addEventListener('keydown', function(event)
   switch (event.key) 
   {
     case 'ArrowLeft':
-      if (slidePage > firstSlidePage)
-      {
-        updateSlide(slidePage, "none"); // Hide the current slide
-        slidePage--;
-        nextSlide(slidePage, "block"); // Show the next slide
-      }
+      navigateLeft();
       break;
 
     case 'ArrowRight':
-
-      if (slidePage < lastSlidePage) 
-      {
-        updateSlide(slidePage, "none"); // Hide the current slide
-        slidePage++;
-        nextSlide(slidePage, "block"); // Show the next slide
-      }
+      navigateRight();
       break;
   }
 });
 
+function navigateRight() 
+{
+  if (slidePage < lastSlidePage) 
+  {
+    hideSlide(slidePage);
+    slidePage++;
+    showSlide(slidePage);
+    updateButtons();
+  }
+}
+
+function navigateLeft() 
+{
+  if (slidePage > firstSlidePage) 
+  {
+    hideSlide(slidePage);
+    slidePage--;
+    showSlide(slidePage);
+    updateButtons();
+  }
+}
+
 function updateSlide(id, displayStyle) 
 {
   const slide = document.getElementById("slide_" + id);
-  if (slide) {
+  if (slide) 
+  {
     slide.style.display = displayStyle;
   }
 }
 
-function nextSlide(id, displayStyle) {
-  const slide = document.getElementById("slide_" + id);
-  if (slide) {
-    slide.style.display = displayStyle;
+function hideSlide(id) 
+{
+  updateSlide(id, "none");
+}
+
+function showSlide(id) 
+{
+  updateSlide(id, "block");
+}
+
+function updateButtons() 
+{
+  const previousButton = document.getElementById("buttonPrevious");
+  const nextButton = document.getElementById("buttonNext");
+  
+  if (firstSlidePage < slidePage && slidePage < lastSlidePage) 
+  {
+    previousButton.style.display = "inline";
+    nextButton.style.display = "inline";
+  } 
+  else if (slidePage === firstSlidePage) 
+  {
+    previousButton.style.display = "none";
+  } 
+  else 
+  {
+    nextButton.style.display = "none";
   }
 }

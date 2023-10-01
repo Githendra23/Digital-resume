@@ -216,17 +216,15 @@
     }
 
     .logo 
-    {
-        width: 30px;
-    }
+    { width: 30px; }
 
-    #slide_4 > img {
-        width: 200px;
-    }
+    #slide_2 { padding: 20px; }
 
-    p {
-        color: #94a1b2;
-    }
+    #slide_3 > img { width: 10% }
+
+    #slide_4 > img { width: 200px; }
+
+    p { color: #94a1b2; }
 
     .pfp 
     {
@@ -240,19 +238,13 @@
     }
     
     h1 
-    {
-        color: #2cb67d;
-    }
+    { color: #2cb67d; }
     
     header h2 
-    {
-        margin-top: -20px;
-    }
+    { margin-top: -20px; }
     
     header 
-    {
-        display: flex;
-    }
+    { display: flex; }
     
     img 
     {
@@ -286,9 +278,28 @@
         flex: 1;
     }
 
-    .school_card > img {
-        margin-top: -15px;
+    #buttonPrevious, #buttonNext {
+        cursor: pointer;
+        outline: 0;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 1rem;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        color: #0d6efd;
+        margin: 10px;
     }
+
+    #buttonPrevious:hover, #buttonNext:hover {
+        color: white;
+    }
+
+    .school_card > img { margin-top: -15px; }
 
     form { max-width:420px; margin:50px auto; }
 
@@ -323,14 +334,14 @@
         background:#2cb67d;
         border-radius:5px;
         border:0;
-        cursor:pointer;
-        color:white;
-        font-size:24px;
-        padding-top:10px;
-        padding-bottom:10px;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         transition: all 0.3s;
-        margin-top:-4px;
-        font-weight:700;
+        margin-top: -4px;
+        font-weight: 700;
     }
     [type="submit"]:hover { background:rgb(16, 106, 67); }
 }

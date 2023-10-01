@@ -7,7 +7,7 @@
         <script src="scroll.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
-        
+
     <body>
         <div id="slide_1">
             <header>
@@ -92,7 +92,7 @@
             <h4>Contact Me</h4>
 
             <div class="contact_card">
-                <form>      
+                <form>
                     <input name="name" type="text" class="feedback-input" placeholder="Name" />   
                     <input name="email" type="text" class="feedback-input" placeholder="Email" />
                     <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
@@ -100,7 +100,10 @@
                 </form>
             </div>
         </div>
-            
-            
+
+        <div class="arrow_buttons">
+            <button id="buttonPrevious" onclick="navigateLeft()"><</button><button id="buttonNext" onclick="navigateRight()">></button>
+        </div>
+
     </body>
 </html>
